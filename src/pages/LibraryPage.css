@@ -1,0 +1,191 @@
+/* =========================
+   PAGE BASE
+========================= */
+
+.library-page {
+  background: #f7f3ee;
+  color: #1c1c1c;
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.library-hero {
+  text-align: center;
+  padding: 90px 20px;
+  background: linear-gradient(135deg, #ece4da, #f7f3ee);
+}
+
+.library-hero h1 {
+  font-size: 3.5rem;
+  margin-bottom: 15px;
+  color: #111;
+}
+
+.library-hero p {
+  max-width: 700px;
+  margin: auto;
+  color: #666;
+  line-height: 1.6;
+  font-size: 1.1rem;
+}
+
+/* =========================
+   SECTIONS
+========================= */
+
+.library-section {
+  padding: 70px 40px;
+}
+
+.library-section h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #111;
+}
+
+/* =========================
+   GRID
+========================= */
+
+.library-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+/* =========================
+   CARD DESIGN
+========================= */
+
+.library-card {
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  transition: 0.3s ease;
+}
+
+.library-card:hover {
+  transform: translateY(-5px);
+}
+
+.card-image {
+  height: 200px;
+  background: linear-gradient(135deg, #d8c3a5, #b08a6a);
+}
+
+.library-card h3 {
+  padding: 15px 15px 5px;
+  font-size: 1.1rem;
+}
+
+.library-card p {
+  padding: 0 15px;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+/* READ BUTTON */
+.read-btn {
+  margin: 15px;
+  padding: 10px 18px;
+  border: none;
+  background: #1c1c1c;
+  color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.read-btn:hover {
+  background: #333;
+}
+
+/* DOWNLOAD BUTTON (EBOOK ONLY) */
+.download-btn {
+  margin: 15px;
+  padding: 10px 18px;
+  border: none;
+  background: #b08a6a;
+  color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.download-btn:hover {
+  background: #9a7558;
+}
+
+/* =========================
+   PAGINATION BUTTONS
+========================= */
+
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 35px;
+}
+
+.view-more,
+.view-less {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.view-more {
+  background: #1c1c1c;
+  color: white;
+}
+
+.view-less {
+  background: #b08a6a;
+  color: white;
+}
+
+.view-more:disabled,
+.view-less:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 992px) {
+  .library-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .library-hero h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .library-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .library-section {
+    padding: 50px 20px;
+  }
+
+  .pagination {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

@@ -1,0 +1,112 @@
+.new-arrivals-page {
+width: 100%;
+min-height: 100vh;
+padding: 40px;
+background: #f2e8e8;
+}
+
+/* HERO SECTION */
+.new-arrivals-hero {
+text-align: center;
+margin-bottom: 40px;
+}
+
+.new-arrivals-hero h1 {
+font-size: 3rem;
+color: #111;
+margin-bottom: 10px;
+}
+
+.new-arrivals-hero p {
+color: #666;
+max-width: 700px;
+margin: auto;
+line-height: 1.6;
+}
+
+/* GRID */
+.new-arrivals-grid {
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+gap: 25px;
+}
+
+/* CARD */
+.arrival-card {
+background: white;
+border-radius: 16px;
+overflow: hidden;
+box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+transition: 0.3s ease;
+}
+
+.arrival-card:hover {
+transform: translateY(-5px);
+}
+
+/* IMAGE */
+.arrival-image {
+height: 300px;
+}
+
+.arrival-image img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+/* INFO */
+.arrival-info {
+padding: 15px;
+}
+
+.arrival-info h3 {
+font-size: 1.1rem;
+margin-bottom: 5px;
+color: #111;
+}
+
+.arrival-info p {
+color: #777;
+font-size: 0.9rem;
+margin-bottom: 5px;
+}
+
+.arrival-info span {
+font-weight: bold;
+display: block;
+margin-bottom: 10px;
+}
+
+/* BUTTON */
+.arrival-info button {
+width: 100%;
+padding: 10px;
+border: none;
+background: #111;
+color: white;
+border-radius: 10px;
+cursor: pointer;
+transition: 0.3s ease;
+}
+
+.arrival-info button:hover {
+opacity: 0.85;
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+.new-arrivals-grid {
+grid-template-columns: repeat(2, 1fr);
+}
+}
+
+@media (max-width: 600px) {
+.new-arrivals-grid {
+grid-template-columns: 1fr;
+}
+
+.new-arrivals-hero h1 {
+font-size: 2rem;
+}
+}
