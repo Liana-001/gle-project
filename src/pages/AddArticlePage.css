@@ -1,0 +1,88 @@
+body{
+    background: #c4a67c;
+}
+
+
+.article-editor{
+    width: 90%;
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 35px;
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,.08);
+}
+
+
+.editor-header{
+    margin-bottom:30px;
+}
+
+.editor-header h1{
+    font-size:2rem;
+    color:#222;
+}
+
+.editor-header p{
+    color:#666;
+    margin-top:8px;
+}
+
+.article-form{
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+}
+
+.article-form label{
+    font-weight:600;
+    color:#333;
+}
+
+.article-form input,
+.article-form select,
+.article-form textarea{
+    width:100%;
+    padding:14px;
+    border:1px solid #ddd;
+    border-radius:8px;
+    font-size:1rem;
+    outline:none;
+}
+
+.article-form textarea{
+    resize:vertical;
+}
+
+.editor-buttons{
+    display:flex;
+    justify-content:flex-end;
+    gap:15px;
+    margin-top:20px;
+}
+
+.draft-btn{
+    padding:12px 24px;
+    border:none;
+    background:#999;
+    color:white;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.publish-btn{
+    padding:12px 24px;
+    border:none;
+    background:#000;
+    color:white;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.publish-btn:hover{
+    background:#222;
+}
+
+.draft-btn:hover{
+    background:#777;
+}

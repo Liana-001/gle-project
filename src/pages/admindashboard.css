@@ -134,4 +134,11 @@ grid-template-columns: 1fr;
 .form-section {
 max-width: 100%;
 }
+
+.sidebar li a {
+  color: white !important;
+  text-decoration: none !important;
+}
+
+
 }

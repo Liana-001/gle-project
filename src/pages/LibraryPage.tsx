@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./LibraryPage.css";
 
 const LibraryPage = () => {
@@ -28,14 +28,14 @@ const LibraryPage = () => {
   // ARTICLES
   // =========================
 
-  const articles = [
-    { title: "Why Elegance Still Matters", author: "Liana" },
-    { title: "Lessons I Learned At 25", author: "Liana" },
-    { title: "Soft Life Discipline", author: "Liana" },
-    { title: "Building Confidence Slowly", author: "Liana" },
-    { title: "Growth Is Not Linear", author: "Liana" },
-    { title: "Becoming Your Higher Self", author: "Liana" },
-  ];
+const [articles, setArticles] = useState([]);
+
+useEffect(() => {
+  fetch("http://localhost:5000/articles")
+    .then((response) => response.json())
+    .then((data) => setArticles(data))
+    .catch((error) => console.error("Error fetching articles:", error));
+}, []);
 
   const [articlePage, setArticlePage] = useState(0);
 
